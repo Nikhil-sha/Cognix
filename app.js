@@ -7,15 +7,15 @@ import { HashRouter, Switch, Route } from 'react-router-dom';
 import Header from './components/header';
 import BottomNav from './components/bottomNav';
 
-import Dashboard from './p/Dashboard';
+import Dashboard from './p/dashboard';
 import GitHub from './p/github';
-import Delete from './p/Delete';
+import Delete from './p/delete';
 import Home from './p/home';
 import Menu from './p/menu';
 import View from './p/view';
 import Edit from './p/edit';
 import New from './p/new';
-import NotFound from './p/NotFound';
+import NotFound from './p/notFound';
 
 class App extends Component {
 	static contextType = AppContext;
