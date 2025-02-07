@@ -31,9 +31,6 @@ class App extends Component {
 			})
 	}
 	
-	addWelcomePad = () => {
-	};
-
 	render() {
 		return (
 			<React.StrictMode>
