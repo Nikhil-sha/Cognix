@@ -60,7 +60,7 @@ class View extends Component {
 					<SecondaryH text={this.context.activePad.name} />
 					<div className="flex gap-3">
 						<IconLink icon="fas fa-edit" link={`/edit/${this.context.activePad.id}`} />
-						<IconButton icon="fas fa-print" handler={this.context.printPad} />
+						<IconButton icon="fas fa-print" handler={() => alert("Feature coming soon!")} />
 					</div>
 				</div>
 				
