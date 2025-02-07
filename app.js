@@ -4,8 +4,8 @@ import ErrorBoundary from './errorBoundary';
 import { AppProvider, AppContext } from './context';
 import { HashRouter, Switch, Route } from 'react-router-dom';
 
-import Header from './components/Header';
-import BottomNav from './components/BottomNav';
+import Header from './components/header';
+import BottomNav from './components/bottomNav';
 
 import Dashboard from './p/Dashboard';
 import GitHub from './p/github';
