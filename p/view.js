@@ -5,8 +5,8 @@ import DOMPurify from "dompurify";
 
 import SecondaryH from '../components/secondaryH';
 import Loader from '../components/loader';
-import IconLink from '../components/IconLink';
-import IconButton from '../components/IconButton';
+import IconLink from '../components/iconLink';
+import IconButton from '../components/iconButton';
 
 class View extends Component {
 	static contextType = AppContext;
