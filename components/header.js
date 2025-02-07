@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import IconLink from './IconLink';
+import IconLink from './iconLink';
 
 class Header extends Component {
 	render() {

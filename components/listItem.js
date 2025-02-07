@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { AppContext } from '../context';
 
-import IconButton from './IconButton';
+import IconButton from './iconButton';
 
 class ListItem extends Component {
 	static contextType = AppContext;

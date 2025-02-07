@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import IconLink from './IconLink';
+import IconLink from './iconLink';
 import { withRouter } from 'react-router-dom';
 import { AppContext } from '../context';
 
