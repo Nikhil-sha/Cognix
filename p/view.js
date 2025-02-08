@@ -5,6 +5,7 @@ import DOMPurify from "dompurify";
 
 import SecondaryH from '../components/secondaryH';
 import Loader from '../components/loader';
+import { purifyConfig } from '../components/someExtraStuff';
 import IconLink from '../components/iconLink';
 import IconButton from '../components/iconButton';
 
@@ -42,7 +43,7 @@ class View extends Component {
 	getSanitizedHtml = () => {
 		if (!this.context.activePad) return "";
 		const rawHtml = marked.parse(this.context.activePad.content);
-		const sanitizedHtml = DOMPurify.sanitize(rawHtml);
+		const sanitizedHtml = DOMPurify.sanitize(rawHtml, purifyConfig);
 
 		setTimeout(() => {
 			hljs.highlightAll();
