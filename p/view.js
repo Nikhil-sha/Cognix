@@ -42,7 +42,13 @@ class View extends Component {
 	getSanitizedHtml = () => {
 		if (!this.context.activePad) return "";
 		const rawHtml = marked.parse(this.context.activePad.content);
-		return DOMPurify.sanitize(rawHtml);
+		const sanitizedHtml = DOMPurify.sanitize(rawHtml);
+
+		setTimeout(() => {
+			hljs.highlightAll();
+		}, 100);
+
+		return sanitizedHtml;
 	};
 
 	render() {

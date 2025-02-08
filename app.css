@@ -91,19 +91,18 @@
 
 /* Code Blocks */
 #padContent pre {
-	background-color: rgba(36, 41, 46, 0.85);
-	color: #e1e4e8;
+	background-color: #000;
+	color: #fff;
 	font-size: 0.9rem;
 	padding: 1rem;
 	border-radius: 6px;
 	overflow-x: auto;
 	margin-bottom: 1rem;
-	box-shadow: inset 0 0 4px rgba(255, 255, 255, 0.1);
 }
 
 #padContent code {
-	background-color: rgba(36, 41, 46, 0.85);
-	color: #e1e4e8;
+	background-color: #000;
+	color: #fff;
 	font-size: 0.9rem;
 	padding: 0.3rem 0.5rem;
 	border-radius: 4px;
@@ -111,6 +110,7 @@
 
 #padContent pre code {
 	background-color: transparent;
+	color: #fff;
 	padding: 0;
 }
 

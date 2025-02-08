@@ -158,34 +158,6 @@ export class AppProvider extends Component {
 		});
 	};
 
-	printPad = () => {
-		let content = document.querySelector('main').innerHTML;
-		let printWindow = window.open('', '', '');
-
-		printWindow.document.write(`
-			<html>
-				<head>
-					<meta charset="UTF-8">
-					<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-					<meta name="viewport" content="width=device-width, initial-scale=1">
-					<meta name="theme-color" content="#111827">
-					<title>Print Preview</title>
-					<style>
-						@media print {
-							*{-webkit-print-color-adjust: exact; print-color-adjust: exact; }
-						}
-					</style>
-					<link rel="stylesheet" href="/app.css" />
-					<script src="https://cdn.tailwindcss.com/"></script>
-				</head>
-				<body onload="window.print(); setTimeout(() => window.close(), 10000);" class="bg-gray-900 flex flex-col gap-2 p-8">
-					${content}
-				</body>
-			</html>
-		`);
-		printWindow.document.close();
-	};
-
 	render() {
 		return (
 			<AppContext.Provider
