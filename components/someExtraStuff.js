@@ -42,9 +42,6 @@ export const purifyConfig = {
   "colspan", "rowspan", "align", "border", "cellpadding", "cellspacing" // Table attributes
  ],
 
-	// Allow embedding but restrict external content to known safe sources (e.g., YouTube, Vimeo)
-	ALLOWED_URI_REGEXP: /^(https?:\/\/(?:www\.)?(youtube\.com|youtu\.be|vimeo\.com|soundcloud\.com)(\/.*)?$)/,
-
 	// Forbid risky attributes to prevent injection attacks
 	FORBID_ATTR: ["onerror", "onload", "onclick", "onmouseover", "onfocus", "style"],
 
