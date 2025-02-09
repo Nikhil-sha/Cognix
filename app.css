@@ -119,6 +119,10 @@ iframe {
 	border-radius: 0.5rem;
 }
 
+#padContent blockquote {
+	margin: 0 0 0 0;
+}
+
 /* Code Blocks */
 #padContent pre {
 	background-color: #000;
