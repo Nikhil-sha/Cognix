@@ -26,8 +26,8 @@ class ErrorBoundary extends Component {
 		if (this.state.hasError) {
 			// Fallback UI
 			return (
-				<div className="h-full w-full max-w-sm mx-auto p-8 flex flex-col justify-center items-center bg-neutral-800 rounded-lg border border-neutral-700 shadow-lg shadow-black/50">
-					<h1 className="text-3xl text-center font-extrabold text-red-600 mb-4">Oops, something went wrong!</h1>
+				<div className="h-full w-full max-w-sm mx-auto p-8 flex flex-col justify-center items-center bg-gray-900 rounded-lg border border-gray-700">
+					<h1 className="text-3xl text-center font-extrabold text-red-500 mb-4">Oops, something went wrong!</h1>
 					<p className="text-sm text-center text-gray-200 mb-4">
 						{this.state.error.toString() || "An unexpected error occurred."}
 					</p>
@@ -38,6 +38,7 @@ class ErrorBoundary extends Component {
 						onClick={this.handleReload}
 						className="mt-4 bg-blue-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-600 transition-all"
 					>
+						<i className="fas fa-rotate-right mr-1 text-blue-200"></i>
 						Reload App
 					</button>
 				</div>
