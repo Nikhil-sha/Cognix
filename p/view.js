@@ -52,6 +52,67 @@ class View extends Component {
 		return sanitizedHtml;
 	};
 
+	printPad = () => {
+		const divContent = document.getElementById("padContent").cloneNode(true);
+		const win = window.open('', '', '');
+
+		const doc = win.document;
+
+		// Create the basic document structure
+		doc.open();
+
+		const html = doc.createElement('html');
+		html.lang = "en";
+
+		const head = doc.createElement('head');
+
+		const metaCharset = doc.createElement('meta');
+		metaCharset.setAttribute('charset', 'UTF-8');
+
+		const metaViewport = doc.createElement('meta');
+		metaViewport.setAttribute('name', 'viewport');
+		metaViewport.setAttribute('content', 'width=device-width, initial-scale=1.0');
+
+		const metaIE = doc.createElement('meta');
+		metaIE.setAttribute('http-equiv', 'X-UA-Compatible');
+		metaIE.setAttribute('content', 'ie=edge');
+
+		const title = doc.createElement('title');
+		title.textContent = this.context.activePad.name;
+
+		const link = doc.createElement('link');
+		link.setAttribute('rel', 'stylesheet');
+		link.setAttribute('href', './app.css');
+
+		head.appendChild(metaCharset);
+		head.appendChild(metaViewport);
+		head.appendChild(metaIE);
+		head.appendChild(title);
+		head.appendChild(link);
+
+		const body = doc.createElement('body');
+
+		// Add cloned pad content
+		body.appendChild(divContent);
+
+		// Add note info
+		const infoPara = doc.createElement('p');
+		infoPara.style.fontSize = '6px';
+		infoPara.style.marginLeft = '10px';
+		infoPara.style.opacity = '0.5';
+		infoPara.innerHTML = `Pad Name: ${this.context.activePad.name}<br/>Created: ${this.context.activePad.createdAt}<br/>Last Updated: ${this.context.activePad.updatedAt}`;
+		body.appendChild(infoPara);
+
+		// Add print script
+		const printScript = doc.createElement('script');
+		printScript.textContent = 'window.print();';
+		body.appendChild(printScript);
+
+		html.appendChild(head);
+		html.appendChild(body);
+		doc.appendChild(html);
+	};
+
 	render() {
 		if (!this.context.activePad) {
 			return (
@@ -67,7 +128,7 @@ class View extends Component {
 					<SecondaryH text={this.context.activePad.name} />
 					<div className="flex gap-3">
 						<IconLink icon="fas fa-edit" link={`/edit/${this.context.activePad.id}`} />
-						<IconButton icon="fas fa-print" handler={() => alert("Feature coming soon!")} />
+						<IconButton icon="fas fa-print" handler={this.printPad} />
 					</div>
 				</div>
 				

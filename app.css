@@ -1,3 +1,12 @@
+@import url('https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/github-dark.min.css');
+
+html,
+body {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-color: #171717;
+}
+
 /* General Styles */
 video {
 	width: 100%;
@@ -32,9 +41,12 @@ iframe {
 #padContent {
 	font-family: 'Inter', sans-serif;
 	line-height: 1.6;
+	background-color: rgb(17, 24, 39);
 	color: #d1d5db;
 	/* Light gray text */
 	letter-spacing: -0.025em;
+	-webkit-print-color-adjust: exact !important;
+	print-color-adjust: exact !important;
 }
 
 /* Headings */
@@ -211,5 +223,108 @@ iframe {
 		width: 0%;
 		left: 100%;
 		background-color: #0000ff;
+	}
+}
+
+@media print {
+	@page {
+		margin: 0;
+		padding: 0;
+		size: auto;
+	}
+
+	#padContent {
+		padding: 36px 72px;
+		background-color: rgba(17, 24, 39, 1) !important;
+		color: #d1d5db !important;
+		word-break: break-word;
+		overflow-wrap: break-word;
+	}
+
+	#padContent pre {
+		background-color: #000;
+		color: #fff;
+		font-size: 0.9rem;
+		padding: 1rem;
+		border-radius: 0.5rem;
+		white-space: pre-wrap;
+		word-wrap: break-word;
+		overflow-x: auto;
+		margin-bottom: 1rem;
+	}
+
+	#padContent code {
+		background-color: #000;
+		color: #fff;
+		font-size: 0.9rem;
+		padding: 0.3rem 0.5rem;
+		white-space: pre-wrap;
+		word-wrap: break-word;
+		border-radius: 4px;
+	}
+
+	#padContent pre code {
+		background-color: transparent;
+		color: #fff;
+		padding: 0;
+	}
+
+	#padContent blockquote {
+		color: #9fa5ad;
+		border-left: 3px solid #4B5563;
+		background: rgba(255, 255, 255, 0.08);
+		padding: 0.9rem;
+		word-break: break-word;
+	}
+
+	#padContent img {
+		max-width: 75%;
+		height: auto;
+		page-break-inside: avoid;
+	}
+
+	#padContent table {
+		border-collapse: collapse;
+		width: 100%;
+		background-color: #1e2227;
+		word-break: break-word;
+	}
+
+	#padContent th,
+	#padContent td {
+		border: 1px solid #2c3036;
+		padding: 0.7rem;
+		word-break: break-word;
+	}
+
+	#padContent th {
+		background-color: #282c34;
+		color: #f3f4f6;
+		font-weight: 600;
+	}
+
+	#padContent td {
+		background-color: #181a1b;
+		color: #c9d1d9;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #4fa3ff !important;
+		word-break: break-word;
+	}
+
+	a:after {
+		content: " (" attr('href') ")";
+	}
+
+	video,
+	audio,
+	iframe {
+		display: none !important;
+	}
+
+	hr {
+		background-color: #30363d;
 	}
 }

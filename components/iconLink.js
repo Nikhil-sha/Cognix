@@ -7,8 +7,8 @@ class IconLink extends Component {
 		return (
 			<Link
 				to={link}
-				className="size-10 flex-shrink-0 flex justify-center items-center bg-gray-800 text-gray-400 border border-gray-700 
-				hover:border-blue-400 hover:text-blue-400 
+				className="size-10 flex-shrink-0 flex justify-center items-center text-gray-400 
+				hover:bg-gray-800 hover:text-blue-400 
 				rounded-xl transition-all duration-300"
 			>
 				<i className={`${icon} text-xl`}></i>
