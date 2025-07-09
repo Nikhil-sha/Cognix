@@ -2,329 +2,330 @@
 
 html,
 body {
-	margin: 0 0 0 0;
-	padding: 0 0 0 0;
-	background-color: #171717;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  background-color: #171717;
 }
 
 /* General Styles */
 video {
-	width: 100%;
-	background-color: #000;
-	height: auto;
-	border-radius: 0.5rem;
-	aspect-ratio: 16 / 9;
-	border: 1px solid #374151;
-	transition: all 0.3s ease-in-out;
-	margin-bottom: 1rem;
+  width: 100%;
+  background-color: #000;
+  height: auto;
+  border-radius: 0.5rem;
+  aspect-ratio: 16 / 9;
+  border: 1px solid #374151;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 1rem;
 }
 
 audio {
-	width: 100%;
-	background-color: #000;
-	padding: 0.5rem;
-	border-radius: 0.5rem;
-	border: 1px solid #374151;
-	margin-bottom: 1rem;
+  width: 100%;
+  background-color: #000;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #374151;
+  margin-bottom: 1rem;
 }
 
 iframe {
-	width: 100%;
-	background-color: #000;
-	height: auto;
-	aspect-ratio: 16 / 9;
-	border-radius: 0.5rem;
-	border: 1px solid #374151;
-	margin-bottom: 1rem;
+  width: 100%;
+  background-color: #000;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  border-radius: 0.5rem;
+  border: 1px solid #374151;
+  margin-bottom: 1rem;
 }
 
 #padContent {
-	font-family: 'Inter', sans-serif;
-	line-height: 1.6;
-	background-color: rgb(17, 24, 39);
-	color: #d1d5db;
-	/* Light gray text */
-	letter-spacing: -0.025em;
-	-webkit-print-color-adjust: exact !important;
-	print-color-adjust: exact !important;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  background-color: rgb(17, 24, 39);
+  color: #d1d5db;
+  /* Light gray text */
+  letter-spacing: -0.025em;
+  overflow-wrap: break-word;
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
 }
 
 /* Headings */
 #padContent h1 {
-	font-size: 1.75rem;
-	font-weight: 700;
-	color: #f3f4f6;
-	margin-bottom: 1.2rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #f3f4f6;
+  margin-bottom: 1.2rem;
 }
 
 #padContent h2 {
-	font-size: 1.5rem;
-	font-weight: 600;
-	color: #e5e7eb;
-	margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #e5e7eb;
+  margin-bottom: 1rem;
 }
 
 #padContent h3 {
-	font-size: 1.3rem;
-	font-weight: 600;
-	color: #e5e7eb;
-	margin-bottom: 0.75rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #e5e7eb;
+  margin-bottom: 0.75rem;
 }
 
 #padContent h4,
 #padContent h5,
 #padContent h6 {
-	font-size: 1.15rem;
-	font-weight: 500;
-	color: #e5e7eb;
-	margin-bottom: 0.6rem;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #e5e7eb;
+  margin-bottom: 0.6rem;
 }
 
 /* Paragraphs */
 #padContent p {
-	font-size: 1rem;
-	color: #d1d5db;
-	margin-bottom: 1.2rem;
+  font-size: 1rem;
+  color: #d1d5db;
+  margin-bottom: 1.2rem;
 }
 
 /* Links */
 #padContent a {
-	color: #4fa3ff;
-	text-decoration: none;
-	border-bottom: 1px dashed rgba(79, 163, 255, 0.5);
-	transition: 0.2s ease-in-out;
+  color: #4fa3ff;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(79, 163, 255, 0.5);
+  transition: 0.2s ease-in-out;
 }
 
 #padContent a:hover {
-	color: #76c0ff;
-	border-bottom-color: rgba(118, 192, 255, 0.8);
+  color: #76c0ff;
+  border-bottom-color: rgba(118, 192, 255, 0.8);
 }
 
 /* Lists */
 #padContent ul,
 #padContent ol {
-	padding-left: 1.25rem;
-	margin-bottom: 1rem;
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 #padContent ul {
-	list-style-type: disc;
+  list-style-type: disc;
 }
 
 #padContent ol {
-	list-style-type: decimal;
+  list-style-type: decimal;
 }
 
 #padContent li {
-	margin-bottom: 0.4rem;
+  margin-bottom: 0.4rem;
 }
 
 /* Blockquotes */
 #padContent blockquote {
-	border-left: 4px solid #4b5563;
-	padding-left: 1rem;
-	font-style: italic;
-	color: #9fa5ad;
-	margin-bottom: 1rem;
-	background: rgba(255, 255, 255, 0.08);
-	padding: 0.9rem;
-	border-radius: 0.5rem;
+  border-left: 4px solid #4b5563;
+  padding-left: 1rem;
+  font-style: italic;
+  color: #9fa5ad;
+  margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0.9rem;
+  border-radius: 0.5rem;
 }
 
 #padContent blockquote p {
-	margin: 0 0 0 0;
+  margin: 0 0 0 0;
 }
 
 /* Code Blocks */
 #padContent pre {
-	background-color: #000;
-	color: #fff;
-	font-size: 0.9rem;
-	padding: 1rem;
-	border-radius: 0.5rem;
-	overflow-x: auto;
-	margin-bottom: 1rem;
+  background-color: #000;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin-bottom: 1rem;
 }
 
 #padContent code {
-	background-color: #000;
-	color: #fff;
-	font-size: 0.9rem;
-	padding: 0.3rem 0.5rem;
-	border-radius: 4px;
+  background-color: #000;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
 }
 
 #padContent pre code {
-	background-color: transparent;
-	color: #fff;
-	padding: 0;
+  background-color: transparent;
+  color: #fff;
+  padding: 0;
 }
 
 /* Tables */
 #padContent table {
-	width: 100%;
-	border-collapse: collapse;
-	margin-bottom: 1rem;
-	font-size: 0.95rem;
-	background-color: #1e2227;
-	border-radius: 0.5rem;
-	overflow: hidden;
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  background-color: #1e2227;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 
 #padContent th,
 #padContent td {
-	border: 1px solid #2c3036;
-	padding: 0.7rem;
+  border: 1px solid #2c3036;
+  padding: 0.7rem;
 }
 
 #padContent th {
-	background-color: #282c34;
-	color: #f3f4f6;
-	font-weight: 600;
+  background-color: #282c34;
+  color: #f3f4f6;
+  font-weight: 600;
 }
 
 #padContent td {
-	background-color: #181a1b;
-	color: #c9d1d9;
+  background-color: #181a1b;
+  color: #c9d1d9;
 }
 
 /* Horizontal Rule */
 #padContent hr {
-	border: none;
-	height: 1px;
-	background-color: #30363d;
-	margin: 1.2rem 0;
+  border: none;
+  height: 1px;
+  background-color: #30363d;
+  margin: 1.2rem 0;
 }
 
 /* Images */
 #padContent img {
-	max-width: 75%;
-	height: auto;
-	border-radius: 0.5rem;
-	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-	margin: auto;
-	margin-bottom: 1rem;
+  max-width: 75%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  margin-bottom: 1rem;
 }
 
 @keyframes progress {
-	0% {
-		width: 0%;
-		left: 0%;
-		background-color: #0000ff;
-	}
-
-	50% {
-		width: 100%;
-		left: 0%;
-		background-color: #ffff00;
-	}
-
-	100% {
-		width: 0%;
-		left: 100%;
-		background-color: #0000ff;
-	}
+  0% {
+    width: 0%;
+    left: 0%;
+    background-color: #0000ff;
+  }
+  
+  50% {
+    width: 100%;
+    left: 0%;
+    background-color: #ffff00;
+  }
+  
+  100% {
+    width: 0%;
+    left: 100%;
+    background-color: #0000ff;
+  }
 }
 
 @media print {
-	@page {
-		margin: 0;
-		padding: 0;
-		size: auto;
-	}
-
-	#padContent {
-		padding: 36px 72px;
-		background-color: rgba(17, 24, 39, 1) !important;
-		color: #d1d5db !important;
-		word-break: break-word;
-		overflow-wrap: break-word;
-	}
-
-	#padContent pre {
-		background-color: #000;
-		color: #fff;
-		font-size: 0.9rem;
-		padding: 1rem;
-		border-radius: 0.5rem;
-		white-space: pre-wrap;
-		word-wrap: break-word;
-		overflow-x: auto;
-		margin-bottom: 1rem;
-	}
-
-	#padContent code {
-		background-color: #000;
-		color: #fff;
-		font-size: 0.9rem;
-		padding: 0.3rem 0.5rem;
-		white-space: pre-wrap;
-		word-wrap: break-word;
-		border-radius: 4px;
-	}
-
-	#padContent pre code {
-		background-color: transparent;
-		color: #fff;
-		padding: 0;
-	}
-
-	#padContent blockquote {
-		color: #9fa5ad;
-		border-left: 3px solid #4B5563;
-		background: rgba(255, 255, 255, 0.08);
-		padding: 0.9rem;
-		word-break: break-word;
-	}
-
-	#padContent img {
-		max-width: 75%;
-		height: auto;
-		page-break-inside: avoid;
-	}
-
-	#padContent table {
-		border-collapse: collapse;
-		width: 100%;
-		background-color: #1e2227;
-		word-break: break-word;
-	}
-
-	#padContent th,
-	#padContent td {
-		border: 1px solid #2c3036;
-		padding: 0.7rem;
-		word-break: break-word;
-	}
-
-	#padContent th {
-		background-color: #282c34;
-		color: #f3f4f6;
-		font-weight: 600;
-	}
-
-	#padContent td {
-		background-color: #181a1b;
-		color: #c9d1d9;
-	}
-
-	a {
-		text-decoration: underline;
-		color: #4fa3ff !important;
-		word-break: break-word;
-	}
-
-	a:after {
-		content: " (" attr('href') ")";
-	}
-
-	video,
-	audio,
-	iframe {
-		display: none !important;
-	}
-
-	hr {
-		background-color: #30363d;
-	}
+  @page {
+    margin: 0;
+    padding: 0;
+    size: auto;
+  }
+  
+  #padContent {
+    padding: 36px 72px;
+    background-color: rgba(17, 24, 39, 1) !important;
+    color: #d1d5db !important;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  #padContent pre {
+    background-color: #000;
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+  }
+  
+  #padContent code {
+    background-color: #000;
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 0.3rem 0.5rem;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border-radius: 4px;
+  }
+  
+  #padContent pre code {
+    background-color: transparent;
+    color: #fff;
+    padding: 0;
+  }
+  
+  #padContent blockquote {
+    color: #9fa5ad;
+    border-left: 3px solid #4B5563;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 0.9rem;
+    word-break: break-word;
+  }
+  
+  #padContent img {
+    max-width: 75%;
+    height: auto;
+    page-break-inside: avoid;
+  }
+  
+  #padContent table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #1e2227;
+    word-break: break-word;
+  }
+  
+  #padContent th,
+  #padContent td {
+    border: 1px solid #2c3036;
+    padding: 0.7rem;
+    word-break: break-word;
+  }
+  
+  #padContent th {
+    background-color: #282c34;
+    color: #f3f4f6;
+    font-weight: 600;
+  }
+  
+  #padContent td {
+    background-color: #181a1b;
+    color: #c9d1d9;
+  }
+  
+  a {
+    text-decoration: underline;
+    color: #4fa3ff !important;
+    word-break: break-word;
+  }
+  
+  a:after {
+    content: " (" attr('href') ")";
+  }
+  
+  video,
+  audio,
+  iframe {
+    display: none !important;
+  }
+  
+  hr {
+    background-color: #30363d;
+  }
 }
