@@ -1,7 +1,7 @@
 {
 	"name": "Cognix",
 	"short_name": "Cognix",
-	"description": "A music webapp built using ReactJS and Saavn.dev Api",
+	"description": "A minimalist note-taking webapp.",
 	"scope": "/Cognix/",
 	"start_url": "/Cognix/index.html",
 	"display": "standalone",
